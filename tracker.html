@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Your Mood</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><h1>Track Mood</h1></header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="tracker.html">Track Mood</a>
+    <a href="mood_booster.html">Booster</a>
+  </nav>
+  <div class="container">
+    <form onsubmit="submitMood(event)">
+      <label for="mood">How are you feeling today?</label>
+      <select id="mood">
+        <option value="">--Select--</option>
+        <option value="happy">Happy</option>
+        <option value="neutral">Neutral</option>
+        <option value="sad">Sad</option>
+        <option value="disappointed">Disappointed</option>
+        <option value="angry">Angry</option>
+      </select>
+      <label for="notes">Anything you want to share?</label>
+      <textarea id="notes" rows="4" placeholder="Write here..."></textarea>
+      <button type="submit" class="button">Submit Mood</button>
+    </form>
+    <div id="trackerFeedback" class="message"></div>
+  </div>
+</body>
+</html>
